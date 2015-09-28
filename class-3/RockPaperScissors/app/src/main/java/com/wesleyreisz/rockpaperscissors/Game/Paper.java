@@ -12,7 +12,11 @@ public class Paper implements GameType {
     public String eval(Integer opponentChoice) {
         if (opponentChoice== R.id.btnRock){
             return GameUtils.BEATS;
+        }else if (opponentChoice==R.id.btnSpock){
+            return GameUtils.BEATS;
         }else if (opponentChoice==R.id.btnScissors){
+            return GameUtils.LOSES_TO;
+        }else if (opponentChoice==R.id.btnLizard){
             return GameUtils.LOSES_TO;
         }
         else{

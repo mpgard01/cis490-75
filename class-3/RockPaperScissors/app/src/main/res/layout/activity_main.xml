@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnPaper"
         android:backgroundTint="@android:color/transparent"
-        android:layout_centerHorizontal="true"
+        android:layout_leftHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/paper"
         />
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnRock"
         android:backgroundTint="@android:color/transparent"
-        android:layout_centerHorizontal="true"
+        android:layout_leftHorizontal="true"
         android:src="@drawable/rock"
         android:layout_above="@id/btnPaper"
         />
@@ -34,5 +34,27 @@
         android:src="@drawable/scissors"
         android:layout_below="@id/btnPaper"
         />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLizard"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_rightHorizontal="true"
+        android:src="@drawable/lizard"
+        android:layout_alignAbove="@+id/btnSpock"
+        android:layout_alignTop="@+id/btnRock"
+        android:layout_alignEnd="@+id/btnSpock" />
+
+    <ImageButton
+        android:layout_width="190px"
+        android:layout_height="200px"
+        android:id="@+id/btnSpock"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/spock"
+        android:adjustViewBounds="false"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/btnScissors" />
+
 
 </RelativeLayout>

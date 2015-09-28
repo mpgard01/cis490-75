@@ -1,20 +1,20 @@
 package com.wesleyreisz.rockpaperscissors;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+
+import static com.wesleyreisz.rockpaperscissors.R.id.btnScissors;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private static final String TAG = "Rock, Paper, Scissors";
+    private static final String TAG = "Rock, Paper, Scissors, Lizard, Spock";
     public static final String PLAYER_CHOICE = "com.wesleyreisz.rock_paper_scissors.player_choice";
 
     @Override
@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         page.setOnClickListener(this);
         ImageButton scissors = (ImageButton)findViewById(R.id.btnScissors);
         scissors.setOnClickListener(this);
+        ImageButton lizard = (ImageButton)findViewById(R.id.btnLizard);
+        rock.setOnClickListener(this);
+        ImageButton spock = (ImageButton)findViewById(R.id.btnSpock);
+        rock.setOnClickListener(this);
     }
 
     @Override
